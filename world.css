@@ -1,7 +1,23 @@
 /* Add your own styles */
+:root{ 
+    --defaultFontFamily: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    --defaultFontSize: 18px;
+    --defaultTopBottomPadding :50px;
+}
+
+
+body {
+    font-family: var(--defaultFontFamily);
+    font-size: var(--defaultFontSize);
+    margin: 0
+   
+}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 960px;
     width: 100%;
   }
   
@@ -12,4 +28,43 @@ table {
   }
   
   tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #c09f9f;}
+
+    #controls {
+        margin: 0 auto;
+        max-width: 960px;
+        width: 100%;
+    }
+
+    header {
+        background-color: rgb(116, 116, 116);
+        color: cornsilk;
+    }
+
+    header > h1 {     
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-gap: 10px;
+        background-color: #ffffff;
+       
+      }
+      
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center; 
+        font-size: 30px;
+      }
+      
+      .item1 {
+        grid-column: 1 / span 6;
+      }
+      .item2 {
+        grid-column: 1 / span 6;
+      }
